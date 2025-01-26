@@ -3,7 +3,7 @@ name: Deploy Node Application
 on: 
   push:
     branches:
-      - mern-ec2-docker
+      - main
 
 jobs:
   build:
@@ -16,14 +16,14 @@ jobs:
       - name: Build Docker Image
         run: docker build -t hemasweetaa/nodejs-app  .
       - name: Publish Image to docker hub
-        run: docker push hemasweetaa/nodejs-app:tagname
+        run: docker push hemasweetaa/nodejs-app:update
  
   deploy:
     needs: build
     runs-on: self-hosted 
     steps:
       - name: Pull image from docker hub
-        run: docker pull hemasweetaa/nodejs-app:latest 
+        run: docker pull hemasweetaa/nodejs-app:update
       - name: Delete old container
         run: docker rm -f nodejs-app-container  
       - name: Run Docker Container
