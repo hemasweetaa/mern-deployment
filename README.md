@@ -1,10 +1,17 @@
 Highlights
 🚀 Seamless Integration: It demonstrates how to deploy React and Node.js applications from separate repositories into a unified deployment pipeline.
+
 ☁️ AWS EC2 Setup: create and configure an AWS EC2 instance to host their applications, ensuring utilization cloud resources effectively.
+
 🗄️ MongoDB Atlas Configuration: Set up MongoDB Atlas as a cloud database, providing a scalable and reliable data storage solution.
+
 📦 Docker Image Creation: Docker images for both applications, streamlining the deployment through containerization.
+
 🔄 Automated Deployment with GitHub Actions: The use of GitHub Actions is highlighted as a powerful automation tool that simplifies the deployment process.
+
 🔑 Environment Variable Management: the importance of securely managing sensitive information, such as database passwords, using GitHub Secrets.
+
+
 Key Insights
 🛠️ Separation of Concerns in Repositories: By hosting React and Node.js in separate repositories, developers can maintain clear boundaries between frontend and backend codebases. This separation facilitates independent updates and debugging, ultimately increasing development efficiency and reducing the risk of introducing bugs in one part of the application when making changes to another.
 
